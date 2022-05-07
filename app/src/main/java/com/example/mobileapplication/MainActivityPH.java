@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 public class MainActivityPH extends AppCompatActivity implements pharmacy_RVAdapter.ItemClickInterface {
 
-    private RecyclerView courseRV;
+    private RecyclerView pharmacyRV;
     private ProgressBar loadingPB;
     private FloatingActionButton addFAB;
     private FirebaseDatabase firebaseDatabase;
@@ -49,19 +49,19 @@ public class MainActivityPH extends AppCompatActivity implements pharmacy_RVAdap
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_ph);
 
-        courseRV=findViewById(R.id.idRVPharmacy);
+        pharmacyRV=findViewById(R.id.idRVPharmacy);
         loadingPB=findViewById(R.id.idPBLoading);
         addFAB=findViewById(R.id.idAddFAB);
         firebaseDatabase=FirebaseDatabase.getInstance();
-        databasereference=firebaseDatabase.getReference("Courses");
+        databasereference=firebaseDatabase.getReference("Pharmacy_Items");
         pharmacyRVModalArrayList=new ArrayList<>();
         bottomSheetRL=findViewById(R.id.idRLBSheet);
         mAuth=FirebaseAuth.getInstance();
         pharmacyRVAdapter=new pharmacy_RVAdapter(pharmacyRVModalArrayList,this,this);
-        courseRV.setLayoutManager(new LinearLayoutManager(this));
-        courseRV.setAdapter(pharmacyRVAdapter);
+        pharmacyRV.setLayoutManager(new LinearLayoutManager(this));
+        pharmacyRV.setAdapter(pharmacyRVAdapter);
 
 
         addFAB.setOnClickListener(new View.OnClickListener() {

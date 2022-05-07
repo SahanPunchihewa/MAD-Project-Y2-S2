@@ -61,8 +61,8 @@ public class addPharmacyItemActivity extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         loadingPB.setVisibility(View.GONE);
                         databaseReference.child(pharmacyI_ID).setValue(pharmacyRVModal);
-                        Toast.makeText(addPharmacyItemActivity.this, "Course Added..", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(addPharmacyItemActivity.this,MainActivity.class));
+                        Toast.makeText(addPharmacyItemActivity.this, "Item Added..", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(addPharmacyItemActivity.this,MainActivityPH.class));
 
                     }
 

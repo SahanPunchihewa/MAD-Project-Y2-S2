@@ -66,7 +66,7 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
             @Override
             public void onClick(View view) {
 
-                loadingPB.setVisibility(View.VISIBLE);
+                //loadingPB.setVisibility(View.VISIBLE);
 
                 String pharmacyIName =pharmacyINameEdt.getText().toString();
                 String pharmacyIPrice =pharmacyIPriceEdt.getText().toString();
@@ -75,16 +75,16 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
 
                 Map<String,Object> map =new HashMap<>();
 
-                map.put("courseName" ,pharmacyIName);
-                map.put("courseDescription" ,pharmacyIDesc);
-                map.put("coursePrice" ,pharmacyIPrice);
-                map.put("courseImg" ,pharmacyI_Img);
-                map.put("courseID" ,pharmacyID);
+                map.put("ItemName" ,pharmacyIName);
+                map.put("ItemDescription" ,pharmacyIDesc);
+                map.put("ItemPrice" ,pharmacyIPrice);
+                map.put("ItemImg" ,pharmacyI_Img);
+                map.put("ItemID" ,pharmacyID);
 
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        loadingPB.setVisibility(View.GONE);
+                        //loadingPB.setVisibility(View.GONE);
                         databaseReference.updateChildren(map);
                         Toast.makeText(editPharmacyItemsActivity.this, "Course Updated..", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(editPharmacyItemsActivity.this ,MainActivityPH.class));
@@ -114,7 +114,7 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
 
         databaseReference.removeValue();
         Toast.makeText(this, "Course Deleted..", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(editPharmacyItemsActivity.this ,MainActivity.class));
+        startActivity(new Intent(editPharmacyItemsActivity.this ,MainActivityPH.class));
     }
 
 
