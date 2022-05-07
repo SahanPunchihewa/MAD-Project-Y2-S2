@@ -8,4 +8,7 @@
     <string name="Grocery_manager_login">Grocery Manager Login</string>
     <string name="Bakery_manager_login">Bakery Manager Login</string>
     <string name="Primacy_manager_login">Primacy Manager login</string>
+    <string name="Grocery_Item">Grocery Item</string>
+    <string name="Bakery_Item">Bakery Item</string>
+    <string name="Primacy_Item">Primacy Item</string>
 </resources>
