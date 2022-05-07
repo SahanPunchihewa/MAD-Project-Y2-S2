@@ -2,4 +2,10 @@
     <string name="app_name">Mobile Application</string>
     <string name="button">Get Start</string>
     <string name="getStartbtn">getStartbtn</string>
+    <string name="Get_Start">Get Start</string>
+    <string name="Login_Manager_btn">Login As a Manager</string>
+    <string name="Login_Customer_btn">Login As a Customer</string>
+    <string name="Grocery_manager_login">Grocery Manager Login</string>
+    <string name="Bakery_manager_login">Bakery Manager Login</string>
+    <string name="Primacy_manager_login">Primacy Manager login</string>
 </resources>
