@@ -11,12 +11,13 @@
     <string name="Grocery_Item">Grocery Item</string>
     <string name="Bakery_Item">Bakery Item</string>
     <string name="Primacy_Item">Primacy Item</string>
-    >
-    <string name="cust_et_confirmPassword">Confirm Password</string>
     <string name="cust_et_name">Name</string>
     <string name="cust_et_email">Email</string>
     <string name="cust_et_phone">Phone</string>
     <string name="cust_et_password">Password</string>
     <string name="cust_et_confirmPassword">Confirm Password</string>
     <string name="cust_resiter_btn">Register</string>
+    <string name="cust_email">Email</string>
+    <string name="cust_pw">Password</string>
+    <string name="Cust_login_btn">Login</string>
 </resources>
