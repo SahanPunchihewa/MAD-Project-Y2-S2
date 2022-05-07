@@ -14,7 +14,13 @@
         android:theme="@style/Theme.MobileApplication">
         <activity
 
+            android:name=".Bakery_Manager_login"
+            android:exported="false" />
+        <activity
+
+
             android:name=".editPharmacyItemsActivity"
+
 
             android:name=".Customer_login"
             android:exported="false" />
