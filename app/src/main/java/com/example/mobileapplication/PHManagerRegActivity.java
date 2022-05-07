@@ -45,7 +45,7 @@ public class PHManagerRegActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(PHManagerRegActivity.this,LoginActivity.class);
+                Intent i =new Intent(PHManagerRegActivity.this,MainActivityPH.class);
                 startActivity(i);
             }
         });

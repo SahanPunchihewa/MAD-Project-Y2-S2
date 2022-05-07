@@ -13,23 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
-
-            android:name=".Bakery_Manager_login"
-            android:exported="false" />
-        <activity
-
-
             android:name=".editPharmacyItemsActivity"
-
-
-            android:name=".Customer_login"
-            android:exported="false" />
-        <activity
-            android:name=".Customer_Dashboard"
-            android:exported="false" />
-        <activity
-            android:name=".ManagerLoginActivity"
-
             android:exported="false" />
         <activity
             android:name=".addPharmacyItemActivity"
@@ -43,11 +27,7 @@
         <activity
             android:name=".PHManagerLogin"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ManagerLoginActivity"
@@ -57,7 +37,15 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
