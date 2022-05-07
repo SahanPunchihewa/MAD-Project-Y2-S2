@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+/*package com.example.mobileapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -53,4 +53,4 @@ public class RegisterActivity extends AppCompatActivity {
             mAuth.createUserWithEmailAndPassword()
 
     }
-}
+} */
