@@ -13,7 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
+
             android:name=".editPharmacyItemsActivity"
+
+            android:name=".Customer_login"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerLoginActivity"
+
             android:exported="false" />
         <activity
             android:name=".addPharmacyItemActivity"
