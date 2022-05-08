@@ -70,7 +70,7 @@ public class PHManagerLogin extends AppCompatActivity {
 
                                 loadingPB.setVisibility(View.GONE);
                                 Toast.makeText(PHManagerLogin.this, "Login Successfull!", Toast.LENGTH_SHORT).show();
-                                Intent i=new Intent(PHManagerLogin.this,MainActivity.class);
+                                Intent i=new Intent(PHManagerLogin.this,MainActivityPH.class);
                                 startActivity(i);
                                 finish();
                             }else{

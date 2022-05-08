@@ -18,7 +18,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class PHManagerRegActivity extends AppCompatActivity {
+public class GManagerRegActivity extends AppCompatActivity {
 
     private TextInputEditText userNameEdt , pwdEdt ,cnfPwdEdt;
     private Button registerBtn;
@@ -30,7 +30,7 @@ public class PHManagerRegActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phmanager_reg);
+        setContentView(R.layout.activity_gmanager_reg);
 
         userNameEdt=findViewById(R.id.idEdtUserName);
         pwdEdt=findViewById(R.id.idEdtPwd);
@@ -45,7 +45,7 @@ public class PHManagerRegActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(PHManagerRegActivity.this,PHManagerLogin.class);
+                Intent i =new Intent(GManagerRegActivity.this,LoginActivity.class);
                 startActivity(i);
             }
         });
@@ -60,11 +60,11 @@ public class PHManagerRegActivity extends AppCompatActivity {
 
                 if(!pwd.equals(cnfPwd)){
 
-                    Toast.makeText(PHManagerRegActivity.this, "Passwords didn't match!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(GManagerRegActivity.this, "Passwords didn't match!", Toast.LENGTH_SHORT).show();
 
                 }else if(TextUtils.isEmpty(userName) && TextUtils.isEmpty(pwd)&& TextUtils.isEmpty(cnfPwd)){
 
-                    Toast.makeText(PHManagerRegActivity.this, "Some Required feilds are empty..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(GManagerRegActivity.this, "Some Required feilds are empty..", Toast.LENGTH_SHORT).show();
                 }else{
 
                     mAuth.createUserWithEmailAndPassword(userName,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -74,13 +74,13 @@ public class PHManagerRegActivity extends AppCompatActivity {
                             if(task.isSuccessful()){
 
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(PHManagerRegActivity.this, "User Registered Successfully..", Toast.LENGTH_SHORT).show();
-                                Intent i=new Intent(PHManagerRegActivity.this , MainActivityPH.class);
+                                Toast.makeText(GManagerRegActivity.this, "User Registered Successfully..", Toast.LENGTH_SHORT).show();
+                                Intent i=new Intent(GManagerRegActivity.this , MainActivityG.class);
                                 startActivity(i);
                                 finish();
                             }else{
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(PHManagerRegActivity.this, "Failed to register..", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(GManagerRegActivity.this, "Failed to register..", Toast.LENGTH_SHORT).show();
 
                             }
 
