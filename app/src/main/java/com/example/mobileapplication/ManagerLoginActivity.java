@@ -24,7 +24,7 @@ public class ManagerLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(ManagerLoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(ManagerLoginActivity.this, Bakery_Manager_login.class);
                 startActivity(intent);
 
             }
@@ -41,7 +41,7 @@ public class ManagerLoginActivity extends AppCompatActivity {
         BakeryManBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ManagerLoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(ManagerLoginActivity.this, Bakery_Manager_login.class);
                 startActivity(intent);
             }
         });
