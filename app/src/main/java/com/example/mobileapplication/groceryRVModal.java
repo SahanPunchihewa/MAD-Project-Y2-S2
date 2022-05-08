@@ -15,7 +15,7 @@ public class groceryRVModal implements Parcelable {
 
     }
 
-    public groceryRVModal(String groceryName, String groceryDescription, String groceryPrice, String groceryImg,  String groceryID) {
+    public groceryRVModal(String groceryName, String groceryDescription, String groceryPrice, String groceryImg, String groceryID) {
         this.groceryName = groceryName;
         this.groceryDescription = groceryDescription;
         this.groceryPrice = groceryPrice;
@@ -47,7 +47,7 @@ public class groceryRVModal implements Parcelable {
         return groceryName;
     }
 
-    public void setGroceryName(String courseName) {
+    public void setGroceryName(String groceryName) {
         this.groceryName = groceryName;
     }
 
@@ -63,26 +63,28 @@ public class groceryRVModal implements Parcelable {
         return groceryPrice;
     }
 
-    public void setGroceryPrice(String coursePrice) {
+    public void setGroceryPrice(String groceryPrice) {
         this.groceryPrice = groceryPrice;
     }
-
 
     public String getGroceryImg() {
         return groceryImg;
     }
 
-    public void setGroceryImg(String courseImg) {
+    public void setGroceryImg(String groceryImg) {
         this.groceryImg = groceryImg;
     }
-
 
     public String getGroceryID() {
         return groceryID;
     }
 
-    public void setGroceryID(String courseID) {
+    public void setGroceryID(String groceryID) {
         this.groceryID = groceryID;
+    }
+
+    public static Creator<groceryRVModal> getCREATOR() {
+        return CREATOR;
     }
 
     @Override
