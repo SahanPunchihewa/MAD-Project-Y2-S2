@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
+
+            android:name=".Payment"
+
             android:name=".BakeryMainActivity"
             android:exported="false" />
         <activity
@@ -20,6 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".AddBakeryItemActivity"
+
             android:exported="false" />
         <activity
             android:name=".editPharmacyItemsActivity"
@@ -35,7 +39,11 @@
             android:exported="false" />
         <activity
             android:name=".PHManagerLogin"
+
+            android:exported="true"></activity>
+
             android:exported="true" />
+
         <activity
             android:name=".ManagerLoginActivity"
             android:exported="false" />
