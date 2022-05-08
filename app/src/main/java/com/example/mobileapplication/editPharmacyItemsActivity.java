@@ -86,7 +86,7 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         //loadingPB.setVisibility(View.GONE);
                         databaseReference.updateChildren(map);
-                        Toast.makeText(editPharmacyItemsActivity.this, "Course Updated..", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(editPharmacyItemsActivity.this, "Item Updated..", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(editPharmacyItemsActivity.this ,MainActivityPH.class));
                     }
 
