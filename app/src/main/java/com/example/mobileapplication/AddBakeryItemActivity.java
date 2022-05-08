@@ -17,7 +17,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class AddBakeryItemActivity extends AppCompatActivity {
+public class  AddBakeryItemActivity extends AppCompatActivity {
 
     private TextInputEditText bakeryINameEdt ,bakeryIPriceEdt,bakeryI_ImgEdt,bakeryIDescEdt;
     private Button addbakeryIBtn;
