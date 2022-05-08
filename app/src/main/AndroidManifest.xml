@@ -13,6 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
+            android:name=".MainActivityG"
+            android:exported="false" />
+        <activity
+            android:name=".editGroceryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addGroceryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GManagerLogin"
+            android:exported="true" />
+
+        <activity
+            android:name=".GManagerRegActivity"
+            android:exported="false" />
+        <activity
             android:name=".editPharmacyItemsActivity"
             android:exported="false" />
         <activity
@@ -26,9 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".PHManagerLogin"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ManagerLoginActivity"
             android:exported="false" />
@@ -37,15 +51,15 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+
     </application>
 
 </manifest>

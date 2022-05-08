@@ -24,8 +24,9 @@ public class ManagerLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(ManagerLoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(ManagerLoginActivity.this, GManagerLogin.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -35,6 +36,7 @@ public class ManagerLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ManagerLoginActivity.this, PHManagerLogin.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -43,6 +45,7 @@ public class ManagerLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ManagerLoginActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
