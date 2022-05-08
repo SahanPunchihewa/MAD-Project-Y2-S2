@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
+
             android:name=".MainActivityG"
             android:exported="false" />
         <activity
@@ -27,6 +28,18 @@
 
         <activity
             android:name=".GManagerRegActivity"
+
+            android:name=".Payment"
+
+            android:name=".BakeryMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditBakeryItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddBakeryItemActivity"
+
+
             android:exported="false" />
         <activity
             android:name=".editPharmacyItemsActivity"
@@ -42,7 +55,15 @@
             android:exported="false" />
         <activity
             android:name=".PHManagerLogin"
+
             android:exported="true" />
+
+
+            android:exported="true"></activity>
+
+            android:exported="true" />
+
+
         <activity
             android:name=".ManagerLoginActivity"
             android:exported="false" />
@@ -52,6 +73,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,20 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_add_bakery_item.xml" value="0.264" />
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_add_pharmacy_item.xml" value="0.36666666666666664" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_bakery_manager_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_customer_dashboard.xml" value="0.36666666666666664" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_customer_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_bakery_main.xml" value="0.4" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_bakery_manager_login.xml" value="0.264" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_customer_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_customer_login.xml" value="0.264" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_edit_bakery_items.xml" value="0.264" />
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_edit_pharmacy_items.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_main.xml" value="0.2972222222222222" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_main_ph.xml" value="0.36666666666666664" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_manager_login.xml" value="0.3640625" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_phmanager_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_main_ph.xml" value="0.1" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_manager_login.xml" value="0.264" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_phmanager_login.xml" value="0.264" />
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_phmanager_reg.xml" value="0.36666666666666664" />
-        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_register.xml" value="0.3359375" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/bakery_rv_item.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/manager_login.xml" value="0.30025445292620867" />
+
         <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/pharmacy_rv_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Github/MAD-Project-Y2-S2/app/src/main/res/layout/activity_add_grocery.xml" value="0.264" />
         <entry key="..\:/Github/MAD-Project-Y2-S2/app/src/main/res/layout/activity_edit_grocery.xml" value="0.25" />
@@ -32,6 +38,9 @@
         <entry key="..\:/Users/User/Documents/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_login.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/User/Documents/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/User/Documents/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/activity_manager_login.xml" value="0.11302083333333333" />
+
+        <entry key="..\:/GitHub/MAD-Project-Y2-S2/app/src/main/res/layout/pharmacy_rv_item.xml" value="0.2" />
+
       </map>
     </option>
   </component>

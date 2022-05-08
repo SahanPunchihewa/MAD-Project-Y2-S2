@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".addPharmacyItemActivity">
+    tools:context=".editPharmacyItemsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:hint="Enter Item Name"
+                android:hint="Enter Bakery Item Name"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
@@ -71,7 +71,7 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="18dp"
-                android:hint="Enter Item Image Link"
+                android:hint="Enter Bakery Item Image Link"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
@@ -113,18 +113,40 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/idBtnAddItem"
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/custom_button_back"
-                android:text="Add Item"
-                android:textAllCaps="false"
-                android:textColor="@color/blue_shade_1" />
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/idBtnUpdateItem"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_back"
+                    android:text="Update \nItem"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_shade_1" />
+
+                <Button
+                    android:id="@+id/idBtnDeleteItem"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_back"
+                    android:text="Delete \nItem"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_shade_1" />
+
+
+            </LinearLayout>
 
         </LinearLayout>
 

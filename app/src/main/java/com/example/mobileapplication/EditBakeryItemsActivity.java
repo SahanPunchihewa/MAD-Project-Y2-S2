@@ -20,14 +20,14 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 import java.util.Map;
 
-public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivity {
+public class EditBakeryItemsActivity<PharmacyRVModal> extends AppCompatActivity {
 
-    private TextInputEditText pharmacyINameEdt ,pharmacyIPriceEdt ,pharmacyI_ImgEdt ,pharmacyIDescEdt;
+    private TextInputEditText bakeryINameEdt ,bakeryIPriceEdt ,bakeryI_ImgEdt ,bakeryIDescEdt;
     private Button updateItemBtn , deleteItemBtn;
     private ProgressBar loadingPB;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
-    private String pharmacyID;
+    private String bakeryID;
 
     private  pharmacyRVModal pharmacyRVModal;
 
@@ -39,10 +39,10 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
         firebaseDatabase=FirebaseDatabase.getInstance();
 
 
-        pharmacyINameEdt=findViewById(R.id.idEdtItemName);
-        pharmacyIPriceEdt=findViewById(R.id.idEdtItemPrice);
-        pharmacyI_ImgEdt=findViewById(R.id.idEdtItemImageLink);
-        pharmacyIDescEdt=findViewById(R.id.idEdtItemDesc);
+        bakeryINameEdt=findViewById(R.id.idEdtItemName);
+        bakeryIPriceEdt=findViewById(R.id.idEdtItemPrice);
+        bakeryI_ImgEdt=findViewById(R.id.idEdtItemImageLink);
+        bakeryIDescEdt=findViewById(R.id.idEdtItemDesc);
         updateItemBtn=findViewById(R.id.idBtnUpdateItem);
         deleteItemBtn=findViewById(R.id.idBtnDeleteItem);
         loadingPB=findViewById(R.id.idPBLoading);
@@ -50,16 +50,16 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
         //getting data from previous activity
         pharmacyRVModal=getIntent().getParcelableExtra("Pharmacy_Items");
         if(pharmacyRVModal!=null){
-            pharmacyINameEdt.setText(pharmacyRVModal.getPharmacyIName() );
-            pharmacyIPriceEdt.setText(pharmacyRVModal.getPharmacyIPrice());
-            pharmacyI_ImgEdt.setText(pharmacyRVModal.getPharmacyI_Img());
-            pharmacyIDescEdt.setText(pharmacyRVModal.getPharmacyIDescription());
-            pharmacyID=pharmacyRVModal.getPharmacyI_ID();
+            bakeryINameEdt.setText(pharmacyRVModal.getPharmacyIName() );
+            bakeryIPriceEdt.setText(pharmacyRVModal.getPharmacyIPrice());
+            bakeryI_ImgEdt.setText(pharmacyRVModal.getPharmacyI_Img());
+            bakeryIDescEdt.setText(pharmacyRVModal.getPharmacyIDescription());
+            bakeryID=pharmacyRVModal.getPharmacyI_ID();
 
 
         }
 
-        databaseReference=firebaseDatabase.getReference("Pharmacy_Items").child(pharmacyID);
+        databaseReference=firebaseDatabase.getReference("bakery_Items").child(bakeryID);
 
 
         updateItemBtn.setOnClickListener(new View.OnClickListener() {
@@ -68,32 +68,32 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
 
                 //loadingPB.setVisibility(View.VISIBLE);
 
-                String pharmacyIName =pharmacyINameEdt.getText().toString();
-                String pharmacyIPrice =pharmacyIPriceEdt.getText().toString();
-                String pharmacyI_Img =pharmacyI_ImgEdt.getText().toString();
-                String pharmacyIDesc =pharmacyIDescEdt.getText().toString();
+                String bakeryIName =bakeryINameEdt.getText().toString();
+                String bakeryIPrice =bakeryIPriceEdt.getText().toString();
+                String bakeryI_Img =bakeryI_ImgEdt.getText().toString();
+                String bakeryIDesc =bakeryIDescEdt.getText().toString();
 
                 Map<String,Object> map =new HashMap<>();
 
-                map.put("ItemName" ,pharmacyIName);
-                map.put("ItemDescription" ,pharmacyIDesc);
-                map.put("ItemPrice" ,pharmacyIPrice);
-                map.put("ItemImg" ,pharmacyI_Img);
-                map.put("ItemID" ,pharmacyID);
+                map.put("ItemName" ,bakeryIName);
+                map.put("ItemDescription" ,bakeryIDesc);
+                map.put("ItemPrice" ,bakeryIPrice);
+                map.put("ItemImg" ,bakeryI_Img);
+                map.put("ItemID" ,bakeryID);
 
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         //loadingPB.setVisibility(View.GONE);
                         databaseReference.updateChildren(map);
-                        Toast.makeText(editPharmacyItemsActivity.this, "Item Updated..", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(editPharmacyItemsActivity.this ,MainActivityPH.class));
+                        Toast.makeText(EditBakeryItemsActivity.this, "Course Updated..", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(EditBakeryItemsActivity.this ,MainActivityPH.class));
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
 
-                        Toast.makeText(editPharmacyItemsActivity.this, "Update Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EditBakeryItemsActivity.this, "Update Failed", Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -114,7 +114,7 @@ public class editPharmacyItemsActivity<PharmacyRVModal> extends AppCompatActivit
 
         databaseReference.removeValue();
         Toast.makeText(this, "Course Deleted..", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(editPharmacyItemsActivity.this ,MainActivityPH.class));
+        startActivity(new Intent(EditBakeryItemsActivity.this ,MainActivityPH.class));
     }
 
 
