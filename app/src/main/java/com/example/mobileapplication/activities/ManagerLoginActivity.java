@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.mobileapplication.R;
 
 public class ManagerLoginActivity extends AppCompatActivity {
 
@@ -26,9 +28,6 @@ public class ManagerLoginActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(ManagerLoginActivity.this, GManagerLogin.class);
-
-                Intent intent = new Intent(ManagerLoginActivity.this, Bakery_Manager_login.class);
-
                 startActivity(intent);
                 finish();
 

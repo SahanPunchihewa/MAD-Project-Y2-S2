@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +9,10 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mobileapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -18,21 +20,35 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class Bakery_Manager_login extends AppCompatActivity {
-    private TextInputEditText userNameEdt, pwdEdt;
+public class PHManagerLogin extends AppCompatActivity {
+
+    private TextInputEditText userNameEdt , pwdEdt;
     private Button LoginBtn;
     private ProgressBar loadingPB;
+    private TextView registerTV;
     private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bakery_manager_login);
-        userNameEdt = findViewById(R.id.idEdtBManagerName);
-        pwdEdt = findViewById(R.id.idEdtBManagerPwd);
+        setContentView(R.layout.activity_phmanager_login);
+        userNameEdt=findViewById(R.id.idEdtUserName);
+        pwdEdt=findViewById(R.id.idEdtPwd);
         LoginBtn=findViewById(R.id.idBtnLogin);
+        loadingPB=findViewById(R.id.idPBLoading);
+        registerTV=findViewById(R.id.idTVRegister);
 
         mAuth=FirebaseAuth.getInstance();
+
+        registerTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i= new Intent(PHManagerLogin.this , PHManagerRegActivity.class);
+                startActivity(i);
+
+            }
+        });
 
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,37 +58,34 @@ public class Bakery_Manager_login extends AppCompatActivity {
                 String userName=userNameEdt.getText().toString();
                 String pwd=pwdEdt.getText().toString();
 
-                if(TextUtils.isEmpty(userName)&& TextUtils.isEmpty(pwd)) {
-                    Toast.makeText(Bakery_Manager_login.this, "Please Enter Your Credentials", Toast.LENGTH_SHORT).show();
-                    return;
+                if(TextUtils.isEmpty(userName)&& TextUtils.isEmpty(pwd)){
 
-                }else {
+                    Toast.makeText(PHManagerLogin.this, "Please Enter Your Credentials", Toast.LENGTH_SHORT).show();
+                    return;
+                }else{
 
                     mAuth.signInWithEmailAndPassword(userName,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
 
-                            if(task.isSuccessful()) {
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(Bakery_Manager_login.this, "Login Successfull!", Toast.LENGTH_SHORT).show();
-                                Intent i=new Intent(Bakery_Manager_login.this,MainActivity.class);
+                                Toast.makeText(PHManagerLogin.this, "Login Successfull!", Toast.LENGTH_SHORT).show();
+                                Intent i=new Intent(PHManagerLogin.this,MainActivityPH.class);
                                 startActivity(i);
                                 finish();
-
-                            }else {
+                            }else{
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(Bakery_Manager_login.this, "Fail to Login", Toast.LENGTH_SHORT).show();
-                            }
+                                Toast.makeText(PHManagerLogin.this, "Fail to Login", Toast.LENGTH_SHORT).show();
 
+                            }
                         }
                     });
 
                 }
 
-
             }
         });
-
 
     }
 
@@ -80,14 +93,25 @@ public class Bakery_Manager_login extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         FirebaseUser user =mAuth.getCurrentUser();
+
         if(user!=null){
 
-            Intent i=new Intent(Bakery_Manager_login.this , MainActivityPH.class);
+            Intent i=new Intent(PHManagerLogin.this , MainActivityPH.class);
             startActivity(i);
             this.finish();
         }
 
-
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
