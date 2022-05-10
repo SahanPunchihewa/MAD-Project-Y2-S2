@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities.grocery;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +20,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.pharmacy.addPharmacyItemActivity;
+import com.example.mobileapplication.models.groceryRVModal;
+import com.example.mobileapplication.adapter.groceryRVAdapter;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -68,7 +72,7 @@ public class MainActivityG extends AppCompatActivity implements groceryRVAdapter
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivityG.this ,addPharmacyItemActivity.class));
+                startActivity(new Intent(MainActivityG.this , addPharmacyItemActivity.class));
 
             }
         });

@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities.pharmacy;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,88 +12,106 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mobileapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class PHManagerRegActivity extends AppCompatActivity {
+public class PHManagerLogin extends AppCompatActivity {
 
-    private TextInputEditText userNameEdt , pwdEdt ,cnfPwdEdt;
-    private Button registerBtn;
+    private TextInputEditText userNameEdt , pwdEdt;
+    private Button LoginBtn;
     private ProgressBar loadingPB;
-    private TextView loginTV;
+    private TextView registerTV;
     private FirebaseAuth mAuth;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phmanager_reg);
-
+        setContentView(R.layout.activity_phmanager_login);
         userNameEdt=findViewById(R.id.idEdtUserName);
         pwdEdt=findViewById(R.id.idEdtPwd);
-        cnfPwdEdt=findViewById(R.id.idedCnPwd);
-        registerBtn = findViewById(R.id.idBtnRegister);
-        loadingPB = findViewById(R.id.idPBLoading);
-        loginTV = findViewById(R.id.idTVLogin);
+        LoginBtn=findViewById(R.id.idBtnLogin);
+        loadingPB=findViewById(R.id.idPBLoading);
+        registerTV=findViewById(R.id.idTVRegister);
 
         mAuth=FirebaseAuth.getInstance();
 
-        loginTV.setOnClickListener(new View.OnClickListener() {
+        registerTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(PHManagerRegActivity.this,PHManagerLogin.class);
+                Intent i= new Intent(PHManagerLogin.this , PHManagerRegActivity.class);
                 startActivity(i);
+
             }
         });
 
-        registerBtn.setOnClickListener(new View.OnClickListener() {
+        LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadingPB.setVisibility(View.VISIBLE);
+
+                loadingPB.setVisibility(View.GONE);
                 String userName=userNameEdt.getText().toString();
                 String pwd=pwdEdt.getText().toString();
-                String cnfPwd=cnfPwdEdt.getText().toString();
 
-                if(!pwd.equals(cnfPwd)){
+                if(TextUtils.isEmpty(userName)&& TextUtils.isEmpty(pwd)){
 
-                    Toast.makeText(PHManagerRegActivity.this, "Passwords didn't match!", Toast.LENGTH_SHORT).show();
-
-                }else if(TextUtils.isEmpty(userName) && TextUtils.isEmpty(pwd)&& TextUtils.isEmpty(cnfPwd)){
-
-                    Toast.makeText(PHManagerRegActivity.this, "Some Required feilds are empty..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PHManagerLogin.this, "Please Enter Your Credentials", Toast.LENGTH_SHORT).show();
+                    return;
                 }else{
 
-                    mAuth.createUserWithEmailAndPassword(userName,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.signInWithEmailAndPassword(userName,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-
                             if(task.isSuccessful()){
 
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(PHManagerRegActivity.this, "User Registered Successfully..", Toast.LENGTH_SHORT).show();
-                                Intent i=new Intent(PHManagerRegActivity.this , MainActivityPH.class);
+                                Toast.makeText(PHManagerLogin.this, "Login Successfull!", Toast.LENGTH_SHORT).show();
+                                Intent i=new Intent(PHManagerLogin.this,MainActivityPH.class);
                                 startActivity(i);
                                 finish();
                             }else{
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(PHManagerRegActivity.this, "Failed to register..", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(PHManagerLogin.this, "Fail to Login", Toast.LENGTH_SHORT).show();
 
                             }
-
-
                         }
                     });
 
                 }
+
             }
         });
 
-
-
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user =mAuth.getCurrentUser();
+
+        if(user!=null){
+
+            Intent i=new Intent(PHManagerLogin.this , MainActivityPH.class);
+            startActivity(i);
+            this.finish();
+        }
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+

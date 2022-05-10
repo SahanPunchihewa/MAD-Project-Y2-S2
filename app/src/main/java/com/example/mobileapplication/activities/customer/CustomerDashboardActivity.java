@@ -1,10 +1,12 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities.customer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Customer_Dashboard extends AppCompatActivity {
+import com.example.mobileapplication.R;
+
+public class CustomerDashboardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
