@@ -42,7 +42,7 @@ public class CustomerRegisterActivity extends AppCompatActivity {
         loginTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CustomerRegisterActivity.this,Customer_login.class);
+                Intent intent = new Intent(CustomerRegisterActivity.this,CustomerLoginActivity.class);
                 startActivity(intent);
             }
         });

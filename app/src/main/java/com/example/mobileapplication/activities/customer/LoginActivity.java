@@ -12,15 +12,14 @@ import com.example.mobileapplication.activities.ManagerLoginActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button cusLogin, managerLogin;
+    private Button managerLogin, cusLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         managerLogin = findViewById(R.id.Login_Manager_btn);
-       // cusLogin =findViewById(R.id.LoginCustomerBtn);
-
+        cusLogin = findViewById(R.id.LoginCustomerBtn);
 
        managerLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,13 +30,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-    /*    cusLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, CustomerRegisterActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }); */
+       cusLogin.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(LoginActivity.this, CustomerLoginActivity.class);
+               startActivity(intent);
+               finish();
+           }
+       });
+
     }
 }
