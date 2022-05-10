@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,25 +17,24 @@
         >
 
         <ImageView
+            android:id="@+id/idIVBakery"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/idIVItem"
             android:scaleType="centerCrop" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Item Name"
+            android:text="Grocery Name"
             android:textColor="@color/black"
-            android:id="@+id/idTVItemName"
+            android:id="@+id/idTVBakeryName"
             android:textStyle="bold"
-            android:layout_below="@id/idIVItem"
             android:layout_margin="3dp"
             android:layout_toLeftOf="@id/idTVPrice"
             android:singleLine="true"
             android:padding="4dp"
             android:textSize="15sp"
-            />
+            tools:ignore="NotSibling" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,7 +44,6 @@
             android:id="@+id/idTVPrice"
             android:singleLine="true"
             android:textStyle="bold"
-            android:layout_below="@id/idIVItem"
             android:layout_margin="3dp"
             android:padding="4dp"
             android:textSize="15sp"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/idRLHome"
     android:background="@color/blue_shade_1"
-    tools:context=".MainActivity">
+    tools:context="activities.grocery.MainActivityG">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVBakery"
@@ -29,10 +29,6 @@
         android:src="@drawable/ic_add"
         app:tint="@color/white"
         tools:ignore="SpeakableTextPresentCheck" />
-
-
-
-
 
 
 </RelativeLayout>

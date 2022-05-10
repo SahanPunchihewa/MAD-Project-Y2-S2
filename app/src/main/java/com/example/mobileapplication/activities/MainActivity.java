@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.bakery.BakeryManagerRegisterActivity;
 import com.example.mobileapplication.activities.customer.CustomerRegisterActivity;
 import com.example.mobileapplication.activities.customer.LoginActivity;
 //import com.example.mobileapplication.activities.customer.PaymentActivity;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CustomerRegisterActivity.class);
+                Intent intent = new Intent(MainActivity.this, BakeryManagerRegisterActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".addPharmacyItemActivity">
+    tools:context="activities.pharmacy.addPharmacyItemActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

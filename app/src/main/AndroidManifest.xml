@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
+            android:name=".activities.bakery.EditBakeryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.bakery.BakeryManagerRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.bakery.Bakery_Manager_login"
+            android:exported="false" />
+        <activity
+            android:name=".activities.customer.CustomerGroceryMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.customer.CustomerDashboardActivity"
             android:exported="false" />
         <activity
