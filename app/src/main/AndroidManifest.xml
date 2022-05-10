@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
+            android:name=".CustomerRegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.grocery.MainActivityG"
             android:exported="false" />
         <activity

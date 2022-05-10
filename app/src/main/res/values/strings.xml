@@ -11,11 +11,11 @@
     <string name="Grocery_Item">Grocery Item</string>
     <string name="Bakery_Item">Bakery Item</string>
     <string name="Primacy_Item">Primacy Item</string>
-    <string name="cust_et_name">Name</string>
-    <string name="cust_et_email">Email</string>
-    <string name="cust_et_phone">Phone</string>
-    <string name="cust_et_password">Password</string>
-    <string name="cust_et_confirmPassword">Confirm Password</string>
+    <string name="cust_et_name">Enter Your Name</string>
+    <string name="cust_et_email">Enter Your Email Address</string>
+    <string name="cust_et_phone">Enter Your Phone Number</string>
+    <string name="cust_et_password">Enter Your Password</string>
+    <string name="cust_et_confirmPassword">Re-Enter Your Password</string>
     <string name="cust_resiter_btn">Register</string>
     <string name="cust_email">Email</string>
     <string name="cust_pw">Password</string>
@@ -23,9 +23,9 @@
     <string name="Bakery_manager_email">Email</string>
     <string name="Bakery_manager_pw">Password</string>
     <string name="Bakery_login_btn">Login</string>
-    <string name="card_number">Card Number</string>
-    <string name="card_holder">Card Holder Name</string>
-    <string name="Expiration_Date">Expiration Date</string>
-    <string name="cvv">CVV</string>
+    <string name="card_number">Enter Card Number</string>
+    <string name="card_holder">Enter Card Holder Name</string>
+    <string name="Expiration_Date">Enter Expiration Date</string>
+    <string name="cvv">Enter CVV Number</string>
     <string name="pay_btn">Pay Here</string>
 </resources>
