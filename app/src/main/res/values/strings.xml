@@ -10,14 +10,13 @@
     <string name="Primacy_manager_login">Primacy Manager login</string>
     <string name="Grocery_Item">Grocery Item</string>
     <string name="Bakery_Item">Bakery Item</string>
-    <string name="Primacy_Item">Primacy Item</string>
+    <string name="Primacy_Item">Pharmacy Item</string>
     <string name="cust_et_name">Enter Your Name</string>
     <string name="cust_et_email">Enter Your Email Address</string>
     <string name="cust_et_phone">Enter Your Phone Number</string>
     <string name="cust_et_password">Enter Your Password</string>
     <string name="cust_et_confirmPassword">Re-Enter Your Password</string>
     <string name="cust_resiter_btn">Register</string>
-    <string name="cust_email">Email</string>
     <string name="cust_pw">Password</string>
     <string name="Cust_login_btn">Login</string>
     <string name="Bakery_manager_email">Email</string>

@@ -2,11 +2,11 @@ package com.example.mobileapplication.models;
 
 public class PaymentModel {
 
-    String id;
-    String CardHolderName;
-    String CardNumber;
-    String ExpireDate;
-    String Cvv;
+    private String id;
+    private String CardHolderName;
+    private String CardNumber;
+    private String ExpireDate;
+    private String Cvv;
 
     public PaymentModel() {};
 

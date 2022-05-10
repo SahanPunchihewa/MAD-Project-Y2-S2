@@ -13,7 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
-            android:name=".CustomerRegisterActivity"
+            android:name=".activities.customer.CustomerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.customer.CustomerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.customer.CustomerRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".activities.grocery.MainActivityG"
