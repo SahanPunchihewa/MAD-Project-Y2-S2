@@ -13,76 +13,56 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
-
-            android:name=".MainActivityG"
+            android:name=".activities.MainActivityG"
             android:exported="false" />
         <activity
-            android:name=".editGroceryActivity"
+            android:name=".activities.editGroceryActivity"
             android:exported="false" />
         <activity
-            android:name=".addGroceryActivity"
+            android:name=".activities.addGroceryActivity"
             android:exported="false" />
         <activity
-            android:name=".GManagerLogin"
+            android:name=".activities.GManagerLogin"
             android:exported="true" />
-
         <activity
-            android:name=".GManagerRegActivity"
-
-            android:name=".Payment"
-
-            android:name=".BakeryMainActivity"
+            android:name=".activities.GManagerRegActivity"
             android:exported="false" />
         <activity
-            android:name=".EditBakeryItemsActivity"
+            android:name=".activities.PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".AddBakeryItemActivity"
-
-
+            android:name=".activities.AddBakeryItemActivity"
             android:exported="false" />
         <activity
-            android:name=".editPharmacyItemsActivity"
+            android:name=".activities.editPharmacyItemsActivity"
             android:exported="false" />
         <activity
-            android:name=".addPharmacyItemActivity"
+            android:name=".activities.addPharmacyItemActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityPH"
+            android:name=".activities.MainActivityPH"
             android:exported="false" />
         <activity
-            android:name=".PHManagerRegActivity"
+            android:name=".activities.PHManagerRegActivity"
             android:exported="false" />
         <activity
-            android:name=".PHManagerLogin"
-
+            android:name=".activities.PHManagerLogin"
             android:exported="true" />
-
-
-            android:exported="true"></activity>
-
-            android:exported="true" />
-
-
         <activity
-            android:name=".ManagerLoginActivity"
+            android:name=".activities.ManagerLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
-
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

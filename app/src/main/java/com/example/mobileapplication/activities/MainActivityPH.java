@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,7 +19,10 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.mobileapplication.R;
 
+import com.example.mobileapplication.adapter.pharmacy_RVAdapter;
+import com.example.mobileapplication.models.pharmacyRVModal;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -187,7 +190,7 @@ public class MainActivityPH extends AppCompatActivity implements pharmacy_RVAdap
             case R.id.idLogout:
                 Toast.makeText(this, "User Logged out..", Toast.LENGTH_SHORT).show();
                 mAuth.signOut();
-                Intent i=new Intent(MainActivityPH.this ,PHManagerLogin.class);
+                Intent i=new Intent(MainActivityPH.this , PHManagerLogin.class);
                 startActivity(i);
                 this.finish();
                 return true;

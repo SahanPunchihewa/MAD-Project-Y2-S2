@@ -1,8 +1,10 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mobileapplication.R;
 
 public class Customer_login extends AppCompatActivity {
 
