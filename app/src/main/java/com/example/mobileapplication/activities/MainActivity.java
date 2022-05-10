@@ -8,19 +8,22 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.customer.CustomerRegisterActivity;
 import com.example.mobileapplication.activities.customer.LoginActivity;
-import com.example.mobileapplication.activities.customer.PaymentActivity;
+//import com.example.mobileapplication.activities.customer.PaymentActivity;
 
 public class MainActivity extends AppCompatActivity {
-    public Button getStartbtn, testBtn;
+    private Button getStartbtn, testBtn;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        testBtn = findViewById(R.id.TestButton);
+
         getStartbtn = findViewById(R.id.getStartbtn);
+        testBtn = findViewById(R.id.button);
+
         getStartbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         testBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this, PaymentActivity.class);
+                Intent intent = new Intent(MainActivity.this, CustomerRegisterActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

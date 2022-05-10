@@ -8,37 +8,36 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.ManagerLoginActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public Button managerLogin;
-    public Button customerLogin;
+    private Button cusLogin, managerLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         managerLogin = findViewById(R.id.Login_Manager_btn);
-        customerLogin=findViewById(R.id.Login_Customer_btn);
-     //   managerLogin.setOnClickListener(new View.OnClickListener() {
-      /*      @Override
+       // cusLogin =findViewById(R.id.LoginCustomerBtn);
+
+
+       managerLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, ManagerLoginActivity.class);
                 startActivity(intent);
                 finish();
             }
-        }); */
+        });
 
-        customerLogin.setOnClickListener(new View.OnClickListener() {
+    /*    cusLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(LoginActivity.this, Customer_login.class);
+                Intent intent = new Intent(LoginActivity.this, CustomerRegisterActivity.class);
                 startActivity(intent);
                 finish();
-
             }
-        });
+        }); */
     }
 }

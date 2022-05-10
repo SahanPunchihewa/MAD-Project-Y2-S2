@@ -17,7 +17,6 @@
     <string name="cust_et_password">Enter Your Password</string>
     <string name="cust_et_confirmPassword">Re-Enter Your Password</string>
     <string name="cust_resiter_btn">Register</string>
-    <string name="cust_email">Email</string>
     <string name="cust_pw">Password</string>
     <string name="Cust_login_btn">Login</string>
     <string name="Bakery_manager_email">Email</string>

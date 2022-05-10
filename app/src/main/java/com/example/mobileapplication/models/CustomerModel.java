@@ -2,12 +2,12 @@ package com.example.mobileapplication.models;
 
 public class CustomerModel {
 
-    String id;
-    String Name;
-    String EmailAddress;
-    String PhoneNumber;
-    String Password;
-    String Cpassword;
+    private String id;
+    private String Name;
+    private String EmailAddress;
+    private String PhoneNumber;
+    private String Password;
+    private String Cpassword;
 
     public CustomerModel() {};
 
