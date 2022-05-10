@@ -1,4 +1,4 @@
-package com.example.mobileapplication.activities;
+package com.example.mobileapplication.activities.bakery;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.MainActivity;
+import com.example.mobileapplication.activities.pharmacy.MainActivityPH;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;

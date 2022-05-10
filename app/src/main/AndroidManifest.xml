@@ -13,46 +13,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
-            android:name=".activities.MainActivityG"
+            android:name=".activities.grocery.MainActivityG"
             android:exported="false" />
         <activity
-            android:name=".activities.editGroceryActivity"
+            android:name=".activities.grocery.editGroceryActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.addGroceryActivity"
+            android:name=".activities.grocery.addGroceryActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.GManagerLogin"
+            android:name=".activities.grocery.GManagerLogin"
             android:exported="true" />
         <activity
-            android:name=".activities.GManagerRegActivity"
+            android:name=".activities.grocery.GManagerRegActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PaymentActivity"
+            android:name=".activities.customer.PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AddBakeryItemActivity"
+            android:name=".activities.bakery.AddBakeryItemActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.editPharmacyItemsActivity"
+            android:name=".activities.pharmacy.editPharmacyItemsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.addPharmacyItemActivity"
+            android:name=".activities.pharmacy.addPharmacyItemActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivityPH"
+            android:name=".activities.pharmacy.MainActivityPH"
             android:exported="false" />
         <activity
-            android:name=".activities.PHManagerRegActivity"
+            android:name=".activities.pharmacy.PHManagerRegActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PHManagerLogin"
+            android:name=".activities.pharmacy.PHManagerLogin"
             android:exported="true" />
         <activity
             android:name=".activities.ManagerLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".activities.customer.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MainActivity"

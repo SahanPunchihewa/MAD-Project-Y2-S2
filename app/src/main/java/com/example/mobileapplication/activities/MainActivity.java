@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mobileapplication.R;
-import com.example.mobileapplication.activities.LoginActivity;
+import com.example.mobileapplication.activities.customer.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
     public Button getStartbtn;

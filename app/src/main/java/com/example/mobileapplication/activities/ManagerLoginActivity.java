@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.bakery.Bakery_Manager_login;
+import com.example.mobileapplication.activities.grocery.GManagerLogin;
+import com.example.mobileapplication.activities.pharmacy.PHManagerLogin;
 
 public class ManagerLoginActivity extends AppCompatActivity {
 
