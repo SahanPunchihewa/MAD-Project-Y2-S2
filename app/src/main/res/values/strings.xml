@@ -24,7 +24,8 @@
     <string name="Bakery_manager_pw">Password</string>
     <string name="Bakery_login_btn">Login</string>
     <string name="card_number">Card Number</string>
+    <string name="card_holder">Card Holder Name</string>
     <string name="Expiration_Date">Expiration Date</string>
     <string name="cvv">CVV</string>
-    <string name="buy_btn">Buy Now</string>
+    <string name="pay_btn">Pay Here</string>
 </resources>
