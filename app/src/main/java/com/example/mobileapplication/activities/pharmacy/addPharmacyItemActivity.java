@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities.pharmacy;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+
+import com.example.mobileapplication.R;
+import com.example.mobileapplication.models.pharmacyRVModal;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -62,7 +65,7 @@ public class addPharmacyItemActivity extends AppCompatActivity {
                         loadingPB.setVisibility(View.GONE);
                         databaseReference.child(pharmacyI_ID).setValue(pharmacyRVModal);
                         Toast.makeText(addPharmacyItemActivity.this, "Item Added..", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(addPharmacyItemActivity.this,MainActivityPH.class));
+                        startActivity(new Intent(addPharmacyItemActivity.this, MainActivityPH.class));
 
                     }
 

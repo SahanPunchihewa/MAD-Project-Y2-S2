@@ -13,66 +13,59 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApplication">
         <activity
-
-            android:name=".MainActivityG"
+            android:name=".activities.customer.CustomerDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".editGroceryActivity"
+            android:name=".activities.customer.CustomerLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".addGroceryActivity"
+            android:name=".activities.customer.CustomerRegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".GManagerLogin"
+            android:name=".activities.grocery.MainActivityG"
+            android:exported="false" />
+        <activity
+            android:name=".activities.grocery.editGroceryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.grocery.addGroceryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.grocery.GManagerLogin"
             android:exported="true" />
         <activity
-            android:name=".Payment"
+            android:name=".activities.grocery.GManagerRegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.customer.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.bakery.AddBakeryItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.pharmacy.editPharmacyItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.pharmacy.addPharmacyItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.pharmacy.MainActivityPH"
+            android:exported="false" />
+        <activity
+            android:name=".activities.pharmacy.PHManagerRegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.pharmacy.PHManagerLogin"
             android:exported="true" />
         <activity
-            android:name=".GManagerRegActivity"
-            android:exported="true" />
-
-
-        <activity
-            android:name=".BakeryMainActivity"
+            android:name=".activities.ManagerLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".EditBakeryItemsActivity"
+            android:name=".activities.customer.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".AddBakeryItemActivity"
-
-
-            android:exported="false" />
-        <activity
-            android:name=".editPharmacyItemsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".addPharmacyItemActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivityPH"
-            android:exported="false" />
-        <activity
-            android:name=".PHManagerRegActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PHManagerLogin"
-
-            android:exported="true" />
-
-
-
-        <activity
-            android:name=".ManagerLoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,8 +73,6 @@
             </intent-filter>
 
         </activity>
-
-
     </application>
 
 </manifest>

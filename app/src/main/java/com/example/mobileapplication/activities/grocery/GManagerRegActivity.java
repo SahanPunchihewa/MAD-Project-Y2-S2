@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities.grocery;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.customer.LoginActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -45,7 +47,7 @@ public class GManagerRegActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(GManagerRegActivity.this,LoginActivity.class);
+                Intent i =new Intent(GManagerRegActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,39 +12,41 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mobileapplication.R;
+import com.example.mobileapplication.models.pharmacyRVModal;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class groceryRVAdapter extends RecyclerView.Adapter<groceryRVAdapter.ViewHolder> {
+public class pharmacy_RVAdapter extends RecyclerView.Adapter<pharmacy_RVAdapter.ViewHolder> {
 
-    private ArrayList<groceryRVModal> groceryRVModalArrayList;
+    private ArrayList<pharmacyRVModal> pharmacyRVModalArrayList;
     private Context context;
     int lastPos= -1 ;
     private ItemClickInterface itemClickInterface;
 
-    public groceryRVAdapter(ArrayList<groceryRVModal> groceryRVModalArrayList, Context context, groceryRVAdapter.ItemClickInterface itemClickInterface) {
-        this.groceryRVModalArrayList = groceryRVModalArrayList;
+    public pharmacy_RVAdapter(ArrayList<pharmacyRVModal> pharmacyRVModalArrayList, Context context, pharmacy_RVAdapter.ItemClickInterface itemClickInterface) {
+        this.pharmacyRVModalArrayList = pharmacyRVModalArrayList;
         this.context = context;
         this.itemClickInterface = itemClickInterface;
     }
 
     @NonNull
     @Override
-    public groceryRVAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public pharmacy_RVAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(context).inflate(R.layout.grocery_rv_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.pharmacy_rv_item,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull groceryRVAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull pharmacy_RVAdapter.ViewHolder holder, int position) {
 
 
-        groceryRVModal groceryRVModal =groceryRVModalArrayList.get(position);
-        holder.groceryNameTV.setText(groceryRVModal.getGroceryName());
-        holder.groceryPriceTV.setText("Rs. "+groceryRVModal.getGroceryPrice());
-        Picasso.get().load(groceryRVModal.getGroceryImg()).into(holder.groceryIV);
+        pharmacyRVModal pharmacyRVModal =pharmacyRVModalArrayList.get(position);
+        holder.pharmacyINameTV.setText(pharmacyRVModal.getPharmacyIName());
+        holder.pharmacyIPriceTV.setText("Rs. "+pharmacyRVModal.getPharmacyIPrice());
+        Picasso.get().load(pharmacyRVModal.getPharmacyI_Img()).into(holder.pharmacyI_IV);
 
         setAnimation(holder.itemView ,position);
 
@@ -74,20 +76,20 @@ public class groceryRVAdapter extends RecyclerView.Adapter<groceryRVAdapter.View
 
     @Override
     public int getItemCount() {
-        return groceryRVModalArrayList.size();
+        return pharmacyRVModalArrayList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView groceryNameTV , groceryPriceTV ;
-        private ImageView groceryIV;
+        private TextView pharmacyINameTV , pharmacyIPriceTV ;
+        private ImageView pharmacyI_IV;
 
         public ViewHolder(@NonNull View itemView){
 
             super(itemView);
-            groceryNameTV=itemView.findViewById(R.id.idTVGroceryName);
-            groceryPriceTV=itemView.findViewById(R.id.idTVPrice);
-            groceryIV=itemView.findViewById(R.id.idIVGrocery);
+            pharmacyINameTV=itemView.findViewById(R.id.idTVItemName);
+            pharmacyIPriceTV=itemView.findViewById(R.id.idTVPrice);
+            pharmacyI_IV=itemView.findViewById(R.id.idIVItem);
         }
 
     }

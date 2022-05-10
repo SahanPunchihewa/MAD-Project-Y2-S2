@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.bakery.Bakery_Manager_login;
+import com.example.mobileapplication.activities.grocery.GManagerLogin;
+import com.example.mobileapplication.activities.pharmacy.PHManagerLogin;
 
 public class ManagerLoginActivity extends AppCompatActivity {
 
@@ -26,9 +31,6 @@ public class ManagerLoginActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(ManagerLoginActivity.this, GManagerLogin.class);
-
-
-
                 startActivity(intent);
                 finish();
 

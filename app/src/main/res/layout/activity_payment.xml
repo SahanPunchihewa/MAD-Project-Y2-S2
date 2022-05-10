@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Payment">
+    tools:context=".activities.customer.PaymentActivity">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -15,34 +15,45 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/et" />
 
     <EditText
-        android:id="@+id/card_number"
+        android:id="@+id/cardHName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="84dp"
-        android:ems="10"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="92dp"
+        android:ems="15"
+        android:hint="@string/card_holder"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/card_number"
-        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Expiration_Date"
+        android:id="@+id/cardNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="144dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="152dp"
+        android:ems="15"
+        android:hint="@string/card_number"
+        android:inputType="number"
         android:minHeight="48dp"
-        android:text="@string/Expiration_Date"
-        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ExpireDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="216dp"
+        android:ems="15"
+        android:hint="@string/Expiration_Date"
+        android:inputType="date"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,23 +61,41 @@
         android:id="@+id/cvv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="212dp"
-        android:ems="10"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="276dp"
+        android:ems="15"
+        android:hint="@string/cvv"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/cvv"
-        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buy_btn"
+        android:id="@+id/payBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="316dp"
-        android:text="@string/buy_btn"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="344dp"
+        android:text="@string/pay_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

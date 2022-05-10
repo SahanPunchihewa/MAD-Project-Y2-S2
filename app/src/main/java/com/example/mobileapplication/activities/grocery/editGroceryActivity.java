@@ -1,4 +1,4 @@
-package com.example.mobileapplication;
+package com.example.mobileapplication.activities.grocery;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.mobileapplication.R;
+import com.example.mobileapplication.models.groceryRVModal;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -86,8 +88,8 @@ public class editGroceryActivity<GroceryRVModal> extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         loadingPB.setVisibility(View.GONE);
                         databaseReference.updateChildren(map);
-                        Toast.makeText(editGroceryActivity.this, "Grocery Updated 01..", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(editGroceryActivity.this ,MainActivityG.class));
+                        Toast.makeText(editGroceryActivity.this, "Grocery Updated..", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(editGroceryActivity.this , MainActivityG.class));
                     }
 
                     @Override
