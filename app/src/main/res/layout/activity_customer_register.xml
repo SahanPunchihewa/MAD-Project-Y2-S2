@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".activities.customer.CustomerRegisterActivity">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -20,77 +19,101 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/cust_et_name"
+        android:id="@+id/cusName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/cust_et_name"
-        android:textAlignment="center"
+        android:minHeight="48dp"
+        android:hint="@string/cust_et_name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/cust_et_email"
+        android:id="@+id/cusEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="120dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/cust_et_email"
-        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:hint="@string/cust_et_email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
     <EditText
-        android:id="@+id/cust_et_phone"
+        android:id="@+id/cusPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="176dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/cust_et_phone"
-        android:textAlignment="center"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:hint="@string/cust_et_phone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/cust_et_password"
+        android:id="@+id/cusPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="232dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/cust_et_password"
-        android:textAlignment="center"
+        android:minHeight="48dp"
+        android:hint="@string/cust_et_password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/cust_et_confirmPassword"
+        android:id="@+id/cusCPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="288dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/cust_et_confirmPassword"
-        android:textAlignment="center"
+        android:minHeight="48dp"
+        android:hint="@string/cust_et_confirmPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/cust_resiter_btn"
-        android:layout_width="161dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="356dp"
+        android:id="@+id/regBtn"
+        android:layout_width="148dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="352dp"
         android:text="@string/cust_resiter_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
