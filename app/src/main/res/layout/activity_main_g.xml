@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:id="@+id/idRLHome"
     android:background="@color/blue_shade_1"
-    tools:context=".MainActivityG">
+    tools:context="activities.grocery.MainActivityG">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/idRVGroceries"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
@@ -30,10 +29,6 @@
         android:src="@drawable/ic_add"
         app:tint="@color/white"
         tools:ignore="SpeakableTextPresentCheck" />
-
-
-
-
 
 
 </RelativeLayout>

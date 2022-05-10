@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.mobileapplication.R;
 import com.example.mobileapplication.activities.pharmacy.MainActivityPH;
+import com.example.mobileapplication.models.BakeryModel;
 import com.example.mobileapplication.models.pharmacyRVModal;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
@@ -43,7 +44,7 @@ public class  AddBakeryItemActivity extends AppCompatActivity {
         loadingPB=findViewById(R.id.idPBLoading);
 
         firebaseDatabase= FirebaseDatabase.getInstance();
-        databaseReference=firebaseDatabase.getReference("Pharmacy_Items");
+        databaseReference=firebaseDatabase.getReference("Bakery");
 
         addbakeryIBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,13 +58,13 @@ public class  AddBakeryItemActivity extends AppCompatActivity {
 
                 bakeryI_ID =bakeryIName;
 
-                pharmacyRVModal pharmacyRVModal =new pharmacyRVModal(bakeryIName,bakeryIDesc,bakeryIPrice,bakeryI_Img,bakeryI_ID);
+                BakeryModel bakeryModel =new BakeryModel(bakeryIName,bakeryIDesc,bakeryIPrice,bakeryI_Img,bakeryI_ID);
 
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         loadingPB.setVisibility(View.GONE);
-                        databaseReference.child(bakeryI_ID).setValue(pharmacyRVModal);
+                        databaseReference.child(bakeryI_ID).setValue(bakeryModel);
                         Toast.makeText(AddBakeryItemActivity.this, "Item Added..", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(AddBakeryItemActivity.this, MainActivityPH.class));
 

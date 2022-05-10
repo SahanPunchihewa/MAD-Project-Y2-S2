@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_shade_1"
-    tools:context="activities.grocery.editGroceryActivity">
+    tools:context="activities.bakery.EditBakeryActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,13 +22,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:hint="Enter Grocery Item Name"
+                android:hint="Enter Bakery Item Name"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idEdtGroceryName"
+                    android:id="@+id/idEdtBakeryName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:importantForAutofill="no"
@@ -46,13 +46,13 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="18dp"
-                android:hint="Enter Grocery Item Price"
+                android:hint="Enter Bakery Item Price"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idEdtGroceryPrice"
+                    android:id="@+id/idEdtBakeryPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:importantForAutofill="no"
@@ -72,13 +72,13 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="18dp"
-                android:hint="Enter Grocery Item Image Link"
+                android:hint="Enter Bakery Item Image Link"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idEdtGroceryImageLink"
+                    android:id="@+id/idEdtBakeryImageLink"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:importantForAutofill="no"
@@ -98,13 +98,13 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="18dp"
-                android:hint="Enter Grocery item Description"
+                android:hint="Enter Bakery item Description"
                 android:padding="5dp"
                 android:textColorHint="@color/black"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idEdtGroceryDesc"
+                    android:id="@+id/idEdtGBakeryDesc"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:importantForAutofill="no"
@@ -126,7 +126,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/idBtnUpdateGrocery"
+                    android:id="@+id/idBtnUpdateBakery"
                     android:layout_width="8dp"
                     android:layout_weight="1"
                     android:textColor="@color/blue_shade_1"
@@ -137,7 +137,7 @@
                     android:textAllCaps="false"/>
 
                 <Button
-                    android:id="@+id/idBtnDeleteGrocery"
+                    android:id="@+id/idBtnDeleteBakery"
                     android:layout_width="8dp"
                     android:layout_weight="1"
                     android:textColor="@color/blue_shade_1"
