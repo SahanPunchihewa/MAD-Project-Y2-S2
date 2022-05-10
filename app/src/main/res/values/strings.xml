@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mobile Application</string>
+    <string name="app_name">Star Grocery</string>
     <string name="button">Get Start</string>
     <string name="getStartbtn">getStartbtn</string>
     <string name="Get_Start">Get Start</string>
@@ -8,4 +8,23 @@
     <string name="Grocery_manager_login">Grocery Manager Login</string>
     <string name="Bakery_manager_login">Bakery Manager Login</string>
     <string name="Primacy_manager_login">Primacy Manager login</string>
+    <string name="Grocery_Item">Grocery Item</string>
+    <string name="Bakery_Item">Bakery Item</string>
+    <string name="Primacy_Item">Primacy Item</string>
+    <string name="cust_et_name">Name</string>
+    <string name="cust_et_email">Email</string>
+    <string name="cust_et_phone">Phone</string>
+    <string name="cust_et_password">Password</string>
+    <string name="cust_et_confirmPassword">Confirm Password</string>
+    <string name="cust_resiter_btn">Register</string>
+    <string name="cust_email">Email</string>
+    <string name="cust_pw">Password</string>
+    <string name="Cust_login_btn">Login</string>
+    <string name="Bakery_manager_email">Email</string>
+    <string name="Bakery_manager_pw">Password</string>
+    <string name="Bakery_login_btn">Login</string>
+    <string name="card_number">Card Number</string>
+    <string name="Expiration_Date">Expiration Date</string>
+    <string name="cvv">CVV</string>
+    <string name="buy_btn">Buy Now</string>
 </resources>
