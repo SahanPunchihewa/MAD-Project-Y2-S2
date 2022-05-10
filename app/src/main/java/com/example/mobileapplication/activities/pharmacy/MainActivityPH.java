@@ -1,4 +1,4 @@
-package com.example.mobileapplication.activities;
+package com.example.mobileapplication.activities.pharmacy;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.mobileapplication.R;
+
 
 import com.example.mobileapplication.adapter.pharmacy_RVAdapter;
 import com.example.mobileapplication.models.pharmacyRVModal;

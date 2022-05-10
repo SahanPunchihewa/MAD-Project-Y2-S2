@@ -1,4 +1,4 @@
-package com.example.mobileapplication.activities;
+package com.example.mobileapplication.activities.bakery;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.mobileapplication.R;
+import com.example.mobileapplication.activities.pharmacy.MainActivityPH;
 import com.example.mobileapplication.models.pharmacyRVModal;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;

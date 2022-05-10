@@ -1,4 +1,4 @@
-package com.example.mobileapplication.activities;
+package com.example.mobileapplication.activities.grocery;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
