@@ -27,7 +27,7 @@ public class ManagerLoginActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(ManagerLoginActivity.this, GManagerLogin.class);
 
-                Intent intent = new Intent(ManagerLoginActivity.this, Bakery_Manager_login.class);
+
 
                 startActivity(intent);
                 finish();

@@ -86,7 +86,7 @@ public class editGroceryActivity<GroceryRVModal> extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         loadingPB.setVisibility(View.GONE);
                         databaseReference.updateChildren(map);
-                        Toast.makeText(editGroceryActivity.this, "Grocery Updated..", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(editGroceryActivity.this, "Grocery Updated 01..", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(editGroceryActivity.this ,MainActivityG.class));
                     }
 

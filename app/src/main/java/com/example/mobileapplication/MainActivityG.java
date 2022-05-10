@@ -68,7 +68,7 @@ public class MainActivityG extends AppCompatActivity implements groceryRVAdapter
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivityG.this ,addPharmacyItemActivity.class));
+                startActivity(new Intent(MainActivityG.this ,addGroceryActivity.class));
 
             }
         });

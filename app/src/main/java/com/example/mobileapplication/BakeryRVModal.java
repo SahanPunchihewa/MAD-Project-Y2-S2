@@ -64,7 +64,6 @@ public class BakeryRVModal {
 
     }
 
-        public int getAdpaterPosition() {
-        }
+
     }
-}
+
